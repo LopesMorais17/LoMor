@@ -34,8 +34,6 @@ function renderLinks() {
     a.textContent = link;
     a.style.opacity = 0;
     linksContainer.appendChild(a);
-
-    // Animação de fade-in para os links
     setTimeout(() => {
       a.style.transition = 'opacity 0.5s ease-in-out';
       a.style.opacity = 1;
