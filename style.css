@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  animation: fadeIn 1s ease-in-out;
+}
+
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+#coverImage {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  opacity: 0;
+  animation: fadeInImage 2s ease-in-out forwards;
+}
+
+.container {
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.affiliate-links a {
+  display: block;
+  margin: 0.5rem 0;
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.affiliate-links a:hover {
+  transform: scale(1.1);
+  color: #125cb3;
+}
+
+.admin-panel {
+  background: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  opacity: 0;
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+input[type="text"], input[type="file"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #125cb3;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInImage {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}

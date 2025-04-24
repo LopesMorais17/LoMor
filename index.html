@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LoMor</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>LoMor - Casa de Apostas</h1>
+  </header>
+
+  <img id="coverImage" src="https://via.placeholder.com/1200x400?text=Imagem+de+Capa" alt="Capa LoMor">
+
+  <div class="container">
+    <section class="affiliate-links">
+      <h2>Links de Afiliados</h2>
+      <div id="linksContainer"></div>
+    </section>
+
+    <section class="admin-panel">
+      <h2>Painel do Administrador</h2>
+      <label for="imageUpload">Alterar Imagem de Capa:</label>
+      <input type="file" id="imageUpload" accept="image/*">
+
+      <label for="newLink">Adicionar Link de Afiliado:</label>
+      <input type="text" id="newLink" placeholder="https://linkdacasa.com">
+      <button onclick="addLink()">Adicionar</button>
+    </section>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
